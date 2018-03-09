@@ -1,0 +1,9 @@
+.cont{
+    background: yellowgreen;
+}
+.ic{
+    background: tomato;
+    display:inline-block;
+    widows: 20px;
+    height: 20px;
+}
