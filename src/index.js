@@ -85,7 +85,7 @@ var bubleSort=function (arr){
 
 var draw=function (){
     var canvasCtx=document.getElementById('mycanvas').getContext('2d');
-     canvasCtx.rect(0,0,60,20);
+     canvasCtx.rect(0,0,1,1);
      canvasCtx.fillStyle="#0000009e";
      canvasCtx.fill();
  console.log( canvasCtx.canvas.toDataURL('image/png'));   
@@ -140,12 +140,4 @@ a.reverse();
 a[0]=a[0].toUpperCase();
 
 return  a.join('');
-}
-function sideE(ary){
-    ary[0]=ary[2];
-}
-function bar(a,b,c){
-    c=10;
-    sideE(arguments);
-    return a+b+c;
 }

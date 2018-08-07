@@ -1,0 +1,229 @@
+  --> GET / 200 21ms 585b
+  <-- GET /style.css
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /style.css 200 4ms 138b
+  --> GET /index.js 200 3ms 3.13kb
+  --> GET /learn.js 200 4ms 341b
+  <-- GET /test.png?time=7:6
+  --> GET /test.png?time=7:6 200 1ms 70b
+  <-- GET /
+  --> GET / 200 3ms 612b
+  <-- GET /style.css
+  <-- GET /index.js
+  --> GET /style.css 200 3ms 196b
+  --> GET /index.js 200 2ms 3.13kb
+  <-- GET /learn.js
+  --> GET /learn.js 200 2ms 341b
+  <-- GET /
+  --> GET / 200 1ms 612b
+  <-- GET /style.css
+  --> GET /style.css 200 1ms 198b
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /index.js 200 4ms 3.13kb
+  --> GET /learn.js 200 3ms 341b
+  <-- GET /
+  --> GET / 200 2ms 612b
+  <-- GET /style.css
+  --> GET /style.css 200 1ms 228b
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /learn.js 200 3ms 341b
+  --> GET /index.js 200 4ms 3.13kb
+  <-- GET /
+  --> GET / 200 2ms 612b
+  <-- GET /style.css
+  --> GET /style.css 200 2ms 228b
+  <-- GET /learn.js
+  <-- GET /index.js
+  --> GET /index.js 200 2ms 3.13kb
+  --> GET /learn.js 200 3ms 341b
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 1ms -
+  <-- GET /
+  --> GET / 200 3ms 612b
+  <-- GET /style.css
+  --> GET /style.css 200 1ms 228b
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /index.js 200 3ms 3.13kb
+  --> GET /learn.js 200 3ms 341b
+  <-- GET /
+  --> GET / 200 2ms 612b
+  <-- GET /style.css
+  <-- GET /index.js
+  --> GET /style.css 200 5ms 228b
+  <-- GET /learn.js
+  --> GET /index.js 200 4ms 3.13kb
+  --> GET /learn.js 200 3ms 341b
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 404 1ms -
+  <-- GET /style.css
+  --> GET /style.css 200 2ms 228b
+  <-- GET /
+  --> GET / 200 1ms 612b
+  <-- GET /style.css
+  --> GET /style.css 200 3ms 227b
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /index.js 200 3ms 3.13kb
+  --> GET /learn.js 200 3ms 341b
+  <-- GET /
+  --> GET / 200 1ms 612b
+  <-- GET /style.css
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /style.css 200 4ms 233b
+  --> GET /index.js 200 5ms 3.13kb
+  --> GET /learn.js 200 3ms 341b
+  <-- GET /
+  --> GET / 200 2ms 612b
+  <-- GET /style.css
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /style.css 200 6ms 233b
+  --> GET /index.js 200 4ms 3.13kb
+  --> GET /learn.js 200 4ms 341b
+  <-- GET /
+  --> GET / 200 3ms 612b
+  <-- GET /style.css
+  <-- GET /index.js
+  --> GET /style.css 200 1ms 227b
+  --> GET /index.js 200 2ms 3.13kb
+  <-- GET /learn.js
+  --> GET /learn.js 200 5ms 341b
+  <-- GET /
+  --> GET / 200 2ms 618b
+  <-- GET /style.css
+  --> GET /style.css 200 1ms 227b
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /index.js 200 4ms 3.13kb
+  --> GET /learn.js 200 4ms 497b
+  <-- GET /ifame.html
+  --> GET /ifame.html 404 1ms -
+  <-- GET /ifame.html
+  --> GET /ifame.html 404 14ms -
+  <-- GET /iframe.html
+  --> GET /iframe.html 200 6ms 462b
+  <-- GET /
+  --> GET / 200 2ms 669b
+  <-- GET /style.css
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /style.css 200 4ms 227b
+  --> GET /index.js 200 3ms 3.13kb
+  --> GET /learn.js 200 2ms 456b
+  <-- GET /iframe.html
+  --> GET /iframe.html 200 5ms 462b
+  <-- GET /
+  --> GET / 200 1ms 669b
+  <-- GET /style.css
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /style.css 200 4ms 227b
+  --> GET /index.js 200 3ms 3.13kb
+  --> GET /learn.js 200 3ms 456b
+  <-- GET /iframe.html
+  --> GET /iframe.html 200 5ms 462b
+  <-- GET /
+  --> GET / 200 1ms 669b
+  <-- GET /style.css
+  --> GET /style.css 200 2ms 227b
+  <-- GET /index.js
+  --> GET /index.js 200 2ms 3.13kb
+  <-- GET /iframe.html
+  --> GET /iframe.html 200 2ms 462b
+  --> GET /learn.js 200 5ms 463b
+  <-- GET /learn.js
+  <-- GET /
+  --> GET / 200 2ms 669b
+  <-- GET /style.css
+  <-- GET /learn.js
+  <-- GET /index.js
+  --> GET /style.css 200 6ms 227b
+  --> GET /index.js 200 4ms 3.13kb
+  --> GET /learn.js 200 3ms 463b
+  <-- GET /iframe.html
+  --> GET /iframe.html 200 2ms 485b
+  <-- GET /
+  --> GET / 200 1ms 688b
+  <-- GET /style.css
+  <-- GET /index.js
+  --> GET /style.css 200 3ms 227b
+  <-- GET /learn.js
+  --> GET /index.js 200 3ms 3.13kb
+  --> GET /learn.js 200 4ms 468b
+  <-- GET /iframe.html
+  --> GET /iframe.html 200 2ms 485b
+  <-- GET /
+  --> GET / 200 3ms 688b
+  <-- GET /style.css
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /style.css 200 3ms 227b
+  --> GET /index.js 200 3ms 3.13kb
+  --> GET /learn.js 200 3ms 466b
+  <-- GET /iframe.html
+  --> GET /iframe.html 200 2ms 485b
+  <-- GET /
+  --> GET / 200 1ms 688b
+  <-- GET /style.css
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /style.css 200 3ms 227b
+  --> GET /index.js 200 4ms 3.13kb
+  --> GET /learn.js 200 3ms 466b
+  <-- GET /iframe.html
+  --> GET /iframe.html 200 2ms 485b
+  <-- GET /
+  --> GET / 200 2ms 688b
+  <-- GET /style.css
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /style.css 200 4ms 227b
+  --> GET /index.js 200 2ms 3.13kb
+  --> GET /learn.js 200 3ms 490b
+  <-- GET /iframe.html
+  --> GET /iframe.html 200 2ms 485b
+  <-- GET /
+  --> GET / 200 1ms 688b
+  <-- GET /style.css
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /style.css 200 4ms 227b
+  --> GET /index.js 200 3ms 3.13kb
+  --> GET /learn.js 200 4ms 490b
+  <-- GET /iframe.html
+  --> GET /iframe.html 200 3ms 466b
+  <-- GET /
+  --> GET / 200 2ms 688b
+  <-- GET /style.css
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /style.css 200 5ms 227b
+  --> GET /index.js 200 4ms 3.13kb
+  --> GET /learn.js 200 4ms 490b
+  <-- GET /iframe.html
+  --> GET /iframe.html 200 4ms 503b
+  <-- GET /
+  --> GET / 200 2ms 929b
+  <-- GET /style.css
+  --> GET /style.css 200 3ms 227b
+  <-- GET /index.js
+  <-- GET /learn.js
+  --> GET /index.js 200 3ms 3.13kb
+  --> GET /learn.js 200 3ms 490b
+  <-- GET /iframe.html
+  --> GET /iframe.html 200 2ms 503b
+  <-- GET /
+  --> GET / 200 1ms 918b
+  <-- GET /style.css
+  <-- GET /index.js
+  --> GET /style.css 200 2ms 227b
+  <-- GET /learn.js
+  --> GET /learn.js 200 2ms 490b
+  --> GET /index.js 200 3ms 3.13kb
+  <-- GET /iframe.html
+  --> GET /iframe.html 200 2ms 503b

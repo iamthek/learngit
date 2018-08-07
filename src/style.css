@@ -7,3 +7,7 @@
     widows: 20px;
     height: 20px;
 }
+.xss{
+  background: url("javascript:alert(123)")  ;
+ color:expression(alert('a'));
+}
