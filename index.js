@@ -46,8 +46,9 @@ var B=center.subscribe('click',function(id,content){
 center.publish('click','这是个点击类')
 center.unSubscribe(B)
 center.publish('click','这是个点击类2')
+//发布订阅模式
 function  inherits(Child, Parent) {var F=function(){};F.prototype = Parent.prototype;Child.prototype = new F();Child.prototype.constructor = Child;}
-
+//继承
 
 var  quickSort=function (arr){
   if(arr.length<2){return arr};
@@ -64,6 +65,7 @@ var  quickSort=function (arr){
     }
     return quickSort(left).concat([base],quickSort(right));
 }
+//快速排序
 var bubleSort=function (arr){
     for(var i=0;i<arr.length-1;i++){
         for(var j=0;j<arr.length-1-i;j++){
@@ -76,12 +78,74 @@ var bubleSort=function (arr){
     }
     return arr;
 }
-var  a=[1,2,10,3,8,-1,0,64,11];
-console.log(a);
-console.log(bubleSort(a));
+//冒泡排序
+// var  a=[1,2,10,3,8,-1,0,64,11];
+// console.log(a);
+// console.log(bubleSort(a));
 
 var draw=function (){
     var canvasCtx=document.getElementById('mycanvas').getContext('2d');
-     canvasCtx.stokeRect(10,10,20,20)   ;
+     canvasCtx.rect(0,0,60,20);
+     canvasCtx.fillStyle="#0000009e";
+     canvasCtx.fill();
+ console.log( canvasCtx.canvas.toDataURL('image/png'));   
 }
-draw();
+var s=1;
+function b(){
+console.log(s);
+var s=2;
+console.log(s);
+}
+b();
+var s;
+console.log(s);
+//变量提升
+var full='windows';
+var obj={
+    full:'os',
+    p:{
+        full:'ps',
+        getName:function (){
+        return this.full;
+    }
+}}
+
+console.log(obj.p.getName());
+var test=obj.p.getName;
+console.log(test());
+//this 指针
+
+
+function fooF(){
+    this.a=0;
+}
+function bar(){
+}
+var foo=new fooF();
+bar.prototype=foo;
+bar.prototype.hello=function (){
+    console.log(this.a);
+   this.a+=1;
+}
+var bar1=new bar();
+var bar2=new bar();
+foo.hello();
+bar1.hello();
+bar2.hello();
+foo.hello();
+
+function reverStr(str){
+var a=str.split('');
+a.reverse();
+a[0]=a[0].toUpperCase();
+
+return  a.join('');
+}
+function sideE(ary){
+    ary[0]=ary[2];
+}
+function bar(a,b,c){
+    c=10;
+    sideE(arguments);
+    return a+b+c;
+}
