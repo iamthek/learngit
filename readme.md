@@ -17,7 +17,7 @@
 - js获取手机陀螺仪
     - 罗盘校准
     ```javascript
-    window.addEventListener(“compassneedscalibration", function(event) {
+    window.addEventListener("compassneedscalibration", function(event) {
       alert('您的罗盘需要校准');
       event.preventDefault();}, true);
     ```
