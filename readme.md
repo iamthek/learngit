@@ -9,4 +9,8 @@
     - window.postMessage(); window.onmessage=(e)=>{}
     - iframe 可以跨域 扩容localStorage
 - html 语义化
-  
+### day2
+-  css3d 
+    - transform-style:  preserve-3d 子元素将保留其 3D 位置。
+    - transform: perspective(74px); 透视视角 方便调试
+    - transform-origin 调整移动中心  高宽的一般为立方体中心
