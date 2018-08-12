@@ -65,3 +65,51 @@
         transform: rotateX(135deg)  rotateY(135deg)
     }
 }
+.shan{
+    margin: 70px 10px 130px;
+    width: 100px;
+    height: 50px;
+    border: solid 1px black;
+   border-radius: 50px 50px 0 0;
+   position: relative;
+   background-image: radial-gradient(20px 100px at 50% 100% ,red 48% ,transparent 50%),
+                     radial-gradient(40px 100px at 50% 100% ,blue 48% ,transparent 50%),
+                     radial-gradient(60px 100px at 50% 100% ,yellowgreen 48% ,transparent 50%),
+                     radial-gradient(80px 100px at 50% 100% ,pink 48% ,transparent 50%),
+                     radial-gradient(100px 100px at 50% 100% ,yellow 48% ,transparent 50%);
+  
+}
+.shan::before{
+    content: '';
+    width: 6px;
+    height: 12px;
+    border-radius: 4px 4px 0 0;
+    border: solid 1px black;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.shan::after{
+    content: '';
+    width: 20px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    border-left: solid 2px black;
+    border-bottom: solid 2px black;
+    border-radius: 0 0 10px 10px;
+    top: 50px;
+}
+aside>p{
+    width: 100%;
+    height: 200px;
+    font-size: 100px;
+    mix-blend-mode: lighten;
+    background-color: white;
+
+} 
+aside{
+    background-image: url(s.png)
+}
