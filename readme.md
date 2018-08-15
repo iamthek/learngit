@@ -56,14 +56,15 @@
   - 可以直接借助Chrome开发者工具调试贝塞尔
 - matrix
    - transform: matrix(a,b,c,d,e,f);
-    $$
+  $$
     \left[
     \begin{matrix}
         a & c & e \\
         b & d & f \\
         0 & 0 & 1
     \end{matrix}
-    \right] * 
+    \right] 
+    * 
   \left[
     \begin{matrix}
         x  \\
@@ -72,7 +73,7 @@
     \end{matrix}
     \right]
         =
-          \left[
+    \left[
     \begin{matrix}
         ax+cy+e \\
         bx+dy+f\\
