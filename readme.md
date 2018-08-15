@@ -50,3 +50,39 @@
     - 两个相邻颜色坐标如果是一样颜色就是一段纯色，适当模糊可以消除锯齿
 - 径向渐变 radial-gradient(x轴半径,y轴半径 at 中心X 中心Y ，颜色值1 位置,颜色值2 ,位置)
 - mix-blend-mode 设置烫金字
+### day4
+- 动画贝塞尔曲线
+  - transition : all 1s  cubic-bezier(.17, .86, .73, .14);
+  - 可以直接借助Chrome开发者工具调试贝塞尔
+- matrix
+   - transform: matrix(a,b,c,d,e,f);
+   
+    $$
+    \left[
+    \begin{matrix}
+        a & c & e \\
+        b & d & f \\
+        0 & 0 & 1
+    \end{matrix}
+    \right] * 
+  \left[
+    \begin{matrix}
+        x  \\
+        y\\
+        1
+    \end{matrix}
+    \right]
+        =
+          \left[
+    \begin{matrix}
+        ax+cy+e \\
+        bx+dy+f\\
+        0+0+1
+    \end{matrix}
+    \right] 
+    $$
+    - 位移  matrix(1, 0, 0, 1, x, y);
+    - 缩放 比例是 s，则有matrix(s, 0, 0, s, 0, 0);第一个s代表x轴，第二个s代表y轴。
+    - 旋转 matrix(cosθ,sinθ,-sinθ,cosθ,0,0)
+    - 拉伸 matrix(1,tan(θy),tan(θx),1,0,0)
+    - 可以借助网站或工具设置matrix 完成组合变换效果,亦可以实现ie下兼容
