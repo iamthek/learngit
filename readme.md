@@ -92,3 +92,11 @@ $$
     - 旋转 matrix(cosθ,sinθ,-sinθ,cosθ,0,0)
     - 拉伸 matrix(1,tan(θ)y,tan(θ)x,1,0,0)
     - 可以借助网站或工具设置matrix 完成组合变换效果,亦可以实现ie下兼容
+### day5
+- 变量提升，作用域，函数的提升优先级比变量高
+- 原型链
+- es5的块级作用域 try{ throw 1} catch
+- this指向  ，谁调用指向谁
+- 箭头函数会bind this  ，指向他父亲
+- es6 语法糖 class的 constructor就是function 本身
+- 闭包 
