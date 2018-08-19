@@ -61,8 +61,7 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   - transition : all 1s  cubic-bezier(.17, .86, .73, .14);
   - 可以直接借助Chrome开发者工具调试贝塞尔
 - matrix
-$$
-\left[
+$$\left[
     \begin{matrix}
         a & c & e \\
         b & d & f \\
@@ -84,8 +83,7 @@ $$
         bx+dy+f\\
         0+0+1
     \end{matrix}
-    \right] 
-$$
+    \right]$$
  - transform: matrix(a,b,c,d,e,f);
     - 位移  matrix(1, 0, 0, 1, x, y);
     - 缩放 比例是 s，则有matrix(s, 0, 0, s, 0, 0);第一个s代表x轴，第二个s代表y轴。
@@ -100,3 +98,43 @@ $$
 - 箭头函数会bind this  ，指向他父亲
 - es6 语法糖 class的 constructor就是function 本身
 - 闭包 
+### day6
+- jquery 初始化 jquery.fn
+- jquery 重载
+```javascript
+var people=['zhangsan','lisi','wangwu']
+function addMethod(obj,key,fn){
+var old=obj[key];
+obj[key]=function(){
+    if(fn.length===arguments.length){
+     return   fn.apply(this,arguments)
+    }
+    else if(typeof old=='function'){
+        return old.apply(this,arguments)
+    }
+}
+}
+addMethod(people,'find',function(){
+    return 0;
+});
+addMethod(people,'find',function(firstname){
+    return 1;
+});
+addMethod(people,'find',function(firstname,lastname){
+    return 2;
+});
+
+console.log( people.find('zhangsan','lisi'));
+console.log(people.find()); 
+```
+- 链式调用 核心是return this
+- 位运算 >>>0 、&&test()、 a||test()
+- hook  甩掉switch和 if  else
+ ```javascript
+ var key='a';
+ var obj={
+     a:function(){}
+ }
+ obj[a]&&obj[a]();
+ ```
+ - $.ready 实现  domContentLoaded 事件

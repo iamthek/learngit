@@ -141,3 +141,29 @@ a[0]=a[0].toUpperCase();
 
 return  a.join('');
 }
+
+//重载
+var people=['zhangsan','lisi','wangwu']
+function addMethod(obj,key,fn){
+var old=obj[key];
+obj[key]=function(){
+    if(fn.length===arguments.length){
+     return   fn.apply(this,arguments)
+    }
+    else if(typeof old=='function'){
+        return old.apply(this,arguments)
+    }
+}
+}
+addMethod(people,'find',function(){
+    return 0;
+});
+addMethod(people,'find',function(firstname){
+    return 1;
+});
+addMethod(people,'find',function(firstname,lastname){
+    return 2;
+});
+
+console.log( people.find('zhangsan','lisi'));
+console.log(people.find()); 
