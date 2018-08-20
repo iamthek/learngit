@@ -138,3 +138,20 @@ console.log(people.find());
  obj[a]&&obj[a]();
  ```
  - $.ready 实现  domContentLoaded 事件
+### day7
+- c语言入门
+- linux常用命令
+- 编译ngix源码包
+```shell
+./confifure
+make
+make install
+```
+- ./confifure的时候可能提示你缺少某些依赖库，ubuntu下使用apt-get 安装，以下是分别安装PCRE，zlib,OpenSSL
+  
+```
+sudo apt-get install libpcre3 libpcre3-dev  
+sudo apt-get install zlib1g-dev
+sudo apt-get install openssl libssl-dev 
+```
+
